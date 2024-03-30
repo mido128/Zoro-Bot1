@@ -941,7 +941,7 @@ export async function handler(chatUpdate) {
         if (!('sDemote' in chat)) chat.sDemote = '';
         if (!('delete' in chat)) chat.antidelete = false;
         if (!('modohorny' in chat)) chat.modohorny = false;
-        if (!('autosticker' in chat)) chat.autosticker = false;
+        if (!('autosticker' in chat)) chat.autosticker = true;
         if (!('audios' in chat)) chat.audios = false;
         if (!('antiLink' in chat)) chat.antiLink = false;
         if (!('antiLink2' in chat)) chat.antiLink2 = false;
@@ -966,7 +966,7 @@ export async function handler(chatUpdate) {
           sDemote: '',
           antidelete: false,
           modohorny: true,
-          autosticker: false,
+          autosticker: true,
           audios: true,
           antiLink: false,
           antiLink2: false,
@@ -989,7 +989,7 @@ export async function handler(chatUpdate) {
         if (!('autoread2' in settings)) settings.autoread2 = false;
         if (!('restrict' in settings)) settings.restrict = false;
         if (!('antiCall' in settings)) settings.antiCall = false;
-        if (!('antiPrivate' in settings)) settings.antiPrivate = false;
+        if (!('antiPrivate' in settings)) settings.antiPrivate = true;
 	if (!('modejadibot' in settings)) settings.modejadibot = true;
         if (!('antispam' in settings)) settings.antispam = false;
 	if (!('audios_bot' in settings)) settings.audios_bot = true;  
@@ -1001,7 +1001,7 @@ export async function handler(chatUpdate) {
           autoread2: false,
           restrict: false,
           antiCall: false,
-          antiPrivate: false,
+          antiPrivate: true,
 	  modejadibot: true,
           antispam: false,
 	  audios_bot: true,
