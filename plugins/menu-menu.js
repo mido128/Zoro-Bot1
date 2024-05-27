@@ -25,9 +25,9 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 
  *👋 اهلا يحب, ${taguser}*
 
- *🧑‍💻 المالك.:* Yosef (Zoro)
- *📱 wa:* +201032389641
- *🏦 PayPal:* paypal.me/Yosef160
+ *🧑‍💻 المالك.:* 𝙃𝘼𝙎𝙃𝙍𝙄𝘼 (𝒁𝑶𝑹𝑶)
+ *📱 wa:* +201110156619
+ *🏦 PayPal:* paypal.me/𝙃𝘼𝙎𝙃𝙍𝙄𝘼
 
 
  *📆 التاريخ:* ${date}
