@@ -1,8 +1,6 @@
-let handler = async (m, { conn }) => {
-    let user = global.db.data.users[m.sender];
-    let name = conn.getName(m.sender);
-    let taguser = '@' + m.sender.split("@s.whatsapp.net")[0];
-    let message = `*〄━╼⦿┄╏⦁〔﷽〕⦁╏┄⦿╼━〄*
+let handler = async (m, { conn, command, text }) => {
+let love = `
+*〄━╼⦿┄╏⦁〔﷽〕⦁╏┄⦿╼━〄*
 
           *☬╎𓆩 اســـتـــمـــاࢪة الـــدخـــول 𓆪╎☬*
 
@@ -40,13 +38,10 @@ let handler = async (m, { conn }) => {
 *~تــ✍︎ــوقــيــع اداࢪة┊📜┊↯:~*
    *~〘☬╎𝐑.𝐍.𝐍 𓆩❄𓆪 𝑺𝑶𝑼𝑳╎☬〙~*
 
-*〄━━━╼⦿┄⦁╏🕸╏⦁┄⦿╾━━━〄*`;
-    
-
-    conn.sendFile(m.chat, 'https://telegra.ph/file/722efd258d6ac9bd9f645.jpg', 'image.jpg', message, m);
-};
-
-handler.customPrefix = /^(7|رونين)$/i;
-handler.command = new RegExp;
-
-export default handler;
+*〄━━━╼⦿┄⦁╏🕸╏⦁┄⦿╾━━━〄*
+`.trim()
+m.reply(love, null, { mentions: conn.parseMention(love) })}
+handler.help = ['estupidez']
+handler.tags = ['fun']
+handler.command = /^(رونين|استماره)$/i
+export default handler
